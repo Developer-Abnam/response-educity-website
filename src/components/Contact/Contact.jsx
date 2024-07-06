@@ -4,6 +4,7 @@ import msg_icon from '../../assets/msg-icon.png'
 import mail_icon from '../../assets/mail-icon.png'
 import phone_icon from '../../assets/phone-icon.png'
 import location_icon from '../../assets/location-icon.png'
+import white_arrow from '../../assets/white-arrow.png'
 
 const Contact = () => {
   return (
@@ -14,10 +15,20 @@ const Contact = () => {
             <ul>
                 <li><img src={mail_icon} alt="" />email@email.com</li>
                 <li><img src={phone_icon} alt="" />+1 234-567-89</li>
-                <li><img src={location_icon} alt="" />77 Massachussets Ave, Cambridge <br /> MA 02139, United State</li>
+                <li><img src={location_icon } alt="" />77 Massachussets Ave, Cambridge <br /> MA 02139, United State</li>
             </ul>
         </div>
-        <div className="contact-col"></div>
+        <div className="contact-col">
+            <form>
+                <label>Your name</label>
+                <input type="text" name='name' placeholder='Enter your name' required/>
+                <label>Your email</label>
+                <input type="tel" name='phone' placeholder='Enter your phone number' required/> 
+                <label>Write your message here</label>
+                <textarea name="message" placeholder='Enter your message' rows='6' required></textarea>
+                <button className='btn dark-btn'>Submit now <img src={white_arrow} alt="" /></button>
+            </form>    
+        </div>
     </div>
   )
 }

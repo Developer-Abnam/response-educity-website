@@ -39,3 +39,25 @@
     width: 25px;
     margin-right: 10px;
 }
+
+.contact-col form input, .contact-col form textarea {
+    display: block;
+    width: 100%;
+    background-color: #EBECFE;
+    padding: 15px 0;
+    outline: 0;
+    border: 0;
+    resize: none;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+/* media query */
+@media (max-width: 700px) {
+    .contact {
+        display: block;
+    }
+    .contact-col {
+        padding: 20px;
+    }
+}
